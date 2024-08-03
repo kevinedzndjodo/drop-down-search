@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Drop down search</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="style.css" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/ca6b3511a1.js" crossorigin="anonymous"></script>
+</head>
+<body class="min-h-screen flex flex-col">
+  <header class="mt-5 relative  bg-slate-100">
+    <nav id="container" class="flex justify-between md:justify-around shadow-md relative">
+      <div>
+        <h1 id="logo" class="text-xl md:text-3xl font-bold p-3"><span class="bg-yellow-300 px-1">GOOD</span> CLOTHES</h1>
+      </div>
+
+      <div class="hidden md:flex justify-center items-center space-x-4 text-xl">
+        <div class="link"><a href="#">Home</a></div>
+        <div class="link"><a href="#">About</a></div>
+        <div class="link"><a href="#">Collection</a></div>
+        <div class="link"><a href="#">Contact US</a></div>
+      </div>
+
+      <div class="search-bar flex justify-center items-center space-x-4">
+        <div class="bg-black p-4 w-6 h-6 rounded-lg flex justify-center items-center">
+          <i class="fa-solid fa-magnifying-glass" id="search-icon"></i>
+        </div>
+
+        <div class="bg-[#e3e3e3] p-4 w-6 h-6 rounded-lg flex justify-center items-center relative">
+          <i class="fa-solid fa-bag-shopping" id="shopping-icon"></i>
+        </div>
+
+        <div class="bg-[#e3e3e3] p-4 w-6 h-6 rounded-lg flex justify-center items-center">
+          <i class="fa-solid fa-bars" id="bars-icon"></i>
+        </div>
+
+
+        
+      </div>
+    </nav>
+  </header>
+
+
+  <div id="search-container" class="hidden w-full top-14 mx-auto md:w-2/5 bg-slate-100 shadow-inner px-4 py-4 absolute md:top-16 mt-4 md:right-4 md:mr-56 rounded-md">
+
+    <div class="relative" id="search-bar">
+      <span class="absolute inset-y-0 left-0 flex items-center pl-3 text-black">
+        <i class="fa-solid fa-camera"></i>
+      </span>
+      <input type="text" placeholder="Search" class="w-full pl-10 pr-4 py-2 border-none outline-none bg-[#e3e3e3] rounded-full focus:border-x-slate-300 focus:ring-2 focus:ring-slate-200">
+      <span class="absolute inset-y-0 right-0 flex items-center pr-3 text-black">
+        <i class="fa-solid fa-microphone"></i>
+      </span>
+
+    </div>
+
+    <div id="trending" class="flex my-4 px-4 space-x-1 md:flex-1 justify-center items-center md:space-x-5 md:my-10 md:px-4">
+      <div class="flex items-center justify-between space-x-2 px-2 rounded-md">
+        <h2>Trending</h2>
+        <span class="text-black"><i class="fa-solid fa-arrow-trend-up"></i></span>
+      </div>
+
+      <div id="decor" class="flex items-center justify-center bg-[#e3e3e3] px-2 rounded-md">Jerseys</div>
+      <div id="decor" class="flex items-center justify-center bg-[#e3e3e3] px-2 rounded-md">Sweatshirts</div>
+      <div id="decor" class="hidden md:flex items-center justify-center bg-[#e3e3e3] px-2 rounded-md">Nikes</div>
+      <div id="decor" class="hidden md:flex items-center justify-center bg-[#e3e3e3] px-2 rounded-md">Bags</div>
+    </div>
+
+    <div id="container">
+
+      <div id="trend-box" class="grid grid-cols-2 gap-4">
+
+        <div id="recent" class="grid grid-cols-3 gap-1 bg-[#e3e3e3] px-2 pt-4 rounded-md">
+          <div class="recent-trend rounded-md">
+            <img src="images/img1.jpg"  alt="Image 1" class="h-fit w-full object-cover rounded-md">
+          </div>
+          <div class="recent-trend rounded-md ">
+            <img src="images/img2.jpg"  alt="Image 1" class="h-fit w-full object-cover rounded-md">
+          </div>
+          <div class="recent-trend rounded-md">
+            <img src="images/img3.jpg"  alt="Image 1" class="h-fit w-full object-cover rounded-md">
+          </div>
+          <div class="recent-trend rounded-md">
+            <img src="images/img4.jpg"  alt="Image 1" class="h-fit w-full object-cover rounded-md">
+          </div>
+          <div class="recent-trend rounded-md">
+            <img src="images/img5.jpg"  alt="Image 1" class="h-fit w-full object-cover rounded-md">
+          </div>
+          <div class="recent-trend rounded-md">
+            <img src="images/img6.jpg"  alt="Image 1" class="h-fit w-full object-cover rounded-md">
+          </div>
+        </div>
+    
+    
+
+      <div id="popular" class="grid grid-cols-3 gap-1  bg-[#e3e3e3] px-2 pt-4 rounded-md">
+        <div class="popular-trend">
+          <img src="images/img7.jpg"  alt="Image 1" class="h-fit w-full object-cover rounded-md">
+        </div>
+        <div class="popular-trend">
+          <img src="images/img8.jpg"  alt="Image 1" class="h-fit w-full object-cover rounded-md">
+        </div>
+        <div class="popular-trend">
+          <img src="images/img9.jpg"  alt="Image 1" class="h-fit w-full object-cover rounded-md">
+        </div>
+        <div class="popular-trend">
+          <img src="images/img10.jpg"  alt="Image 1" class="h-fit w-full object-cover rounded-md">
+        </div>
+        <div class="popular-trend">
+          <img src="images/img11.jpg"  alt="Image 1" class="h-fit w-full object-cover rounded-md">
+        </div>
+        <div class="popular-trend">
+          <img src="images/img12.jpg"  alt="Image 1" class="h-fit w-full object-cover rounded-md">
+        </div>
+      </div>
+    </div>
+
+    </div>
+    
+
+  </div>
+
+  <main class="flex-grow relative">
+
+  </main>
+
+
+  <footer class="shrink-0">
+
+    <div class="flex justify-center md:justify-around items-center p-4 bg-black text-white">
+      <div class="hidden md:block text-xl md:font-semibold"><h1>© 2022 <span class="bg-yellow-300 px-1 text-black">GOOD</span> CLOTHTES. All rights reserved.</h1></div>
+      <div class="flex justify-center items-center space-x-4">
+        <a href="#"><i class="fab fa-facebook w-6 h-6"></i></a>
+        <a href="#"><i class="fab fa-twitter w-6 h-6"></i></a>
+        <a href="#"><i class="fab fa-instagram w-6 h-6"></i></a>
+        <a href="#"><i class="fab fa-snapchat w-6 h-6"></i></a>
+        <a href="#"><i class="fab fa-whatsapp w-6 h-6"></i></a>
+      </div>
+    </div>
+
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
